@@ -1,19 +1,22 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
+    <topo-map :data="data" projection="geoConicConformal"></topo-map>
   </div>
 </template>
 
 <script>
+import map from 'vue-d3-world-map/src/components/map';
+const data = require('../world.json');
+
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
+  components: {
+    'topo-map': map
+  },
+  data() {
+    return {
+      data: JSON.stringify(data)
+    }
   }
 }
 </script>
