@@ -1,5 +1,5 @@
 {
-  "name": "vue-d3-world-map",
+  "name": "vue-topojson-map",
   "version": "1.0.0",
   "description": "A Package to display a world map component",
   "main": "index.js",
@@ -13,14 +13,22 @@
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.24",
-    "jest": "^23.5.0"
+    "babel-jest": "^23.4.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.5.0",
+    "vue-jest": "^2.6.0",
+    "vuepress": "^0.14.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafael-kennedy/vue-d3-world-map.git"
+    "url": "git+https://github.com/rafael-kennedy/vue-topojson-map.git"
   },
   "files": [
     "/lib",
@@ -37,7 +45,7 @@
   "author": "Rafael Kennedy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rafael-kennedy/vue-d3-world-map/issues"
+    "url": "https://github.com/rafael-kennedy/vue-topojson-map/issues"
   },
-  "homepage": "https://github.com/rafael-kennedy/vue-d3-world-map#readme"
+  "homepage": "https://github.com/rafael-kennedy/vue-topojson-map#readme"
 }
