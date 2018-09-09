@@ -1,0 +1,24 @@
+{
+  "objects": {
+    "square": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "id": "302625",
+          "type": "Polygon",
+          "properties": {
+            "land": "base"
+          },
+          "clipped": true,
+          "arcs": [[0]]
+        }
+      ]
+    }
+  },
+  "type": "Topology",
+  "transform": {
+    "translate": [-73.98193359375, 40.68896903762435],
+    "scale": [0.000005364418029799034, 0.000004067495784909614]
+  },
+  "arcs": [[[0, 0], [0, 1024], [1024, 0], [0, -1024], [-1024, 0]]]
+}
