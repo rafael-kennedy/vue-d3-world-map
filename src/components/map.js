@@ -56,6 +56,7 @@ const toData = vm =>
   }, {});
 
 export default {
+  render,
   data() {
     return {
       ...toData(dataVals),
@@ -107,6 +108,9 @@ export default {
         .translate([this.width / 2, this.height / 2]);
       const toPath = d3.geoPath().projection(projection);
       return feature ? toPath(feature) : toPath;
+    },
+    click() {
+      debugger;
     },
     select() {
       return d3.select(this.$el);

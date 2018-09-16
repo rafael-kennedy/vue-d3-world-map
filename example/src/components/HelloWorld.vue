@@ -2,18 +2,17 @@
   <div class="hello">
     <topo-map 
       :data="data" 
-      projection="geoOrthographic"
-    ></topo-map>
+      projection="geoMercator"
+    >
+    </topo-map>
   </div>
 </template>
 
 <script>
-import map from 'vue-d3-world-map/src/components/map';
-// const data = require('../../../test/fixtures/square.json');
-const data = require('../world.json')
+import map from 'vue-d3-world-map/src/components/map.js';
+import data from '../world.json';
 
 export default {
-  name: 'HelloWorld',
   components: {
     'topo-map': map
   },
@@ -26,9 +25,12 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.earth {
+<style>
+.countries1 {
   fill: cadetblue;
   stroke: red;
+}
+svg {
+  background-color: lightblue;
 }
 </style>
